@@ -1,13 +1,7 @@
-import { ModeToggle } from "@/components/ModeToggle";
 import React from "react";
 
 const HomePage = () => {
-  return (
-    <div>
-      HomePage
-      <ModeToggle />
-    </div>
-  );
+  return <div>HomePage</div>;
 };
 
 export default HomePage;

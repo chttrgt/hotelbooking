@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "./_components/Navbar";
 
 interface IRoutersLayoutProps {
   children: React.ReactNode;
@@ -7,9 +8,8 @@ interface IRoutersLayoutProps {
 const RoutersLayout = ({ children }: IRoutersLayoutProps) => {
   return (
     <>
-      Navbar
+      <Navbar />
       <div className="min-h-screen">{children}</div>
-      Footer
     </>
   );
 };
