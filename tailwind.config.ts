@@ -21,7 +21,7 @@ const config: Config = {
       colors: {
         mydark1: "#0E0E0E",
         mydark2: "#1F1E1E",
-        mylight2: "#FFDD83",
+        mylight2: "#C2AF57",
         mylight1: "#CC8C18",
       },
       keyframes: {

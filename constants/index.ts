@@ -18,23 +18,21 @@ export const NavMenu = [
     url: "/contact",
   },
 ];
-/*
-export const SliderImage = [
-    {
-      id: 1,
-      href: "/slider/1.jpg",
-      alt: "slider 1"
-    },
-    {
-      id: 2,
-      href: "/slider/2.jpg",
-      alt: "slider 2"
-    },
-    {
-      id: 3,
-      href: "/slider/3.jpg",
-      alt: "slider 3"
-    }
-  ];
 
-  */
+export const SliderImages = [
+  {
+    id: 1,
+    href: "/slider/1.jpg",
+    alt: "slider 1",
+  },
+  {
+    id: 2,
+    href: "/slider/2.jpg",
+    alt: "slider 2",
+  },
+  {
+    id: 3,
+    href: "/slider/3.jpg",
+    alt: "slider 3",
+  },
+];
