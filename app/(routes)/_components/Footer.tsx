@@ -101,7 +101,7 @@ const Footer = () => {
               <p className="flex flex-col gap-4 text-gray-400">
                 <span className="flex items-center gap-2">
                   <MapPin size={19} />
-                  Turkey Istanbul
+                  Global Street vs Turkey Istanbul
                 </span>
                 <span className="flex items-center gap-2">
                   <Smartphone size={19} />
@@ -114,6 +114,13 @@ const Footer = () => {
               </p>
             </div>
           </div>
+          <div className="mt-8 text-center">
+              <p className="text-gray-400">&copy; Trainer Efe Görkem Ümit</p>
+              <p className="text-gray-400">
+                Designed By&nbsp;
+                <span className="text-yellow-500">Efe Görkem Ümit</span>
+              </p>
+            </div>
         </div>
       </div>
     </div>
