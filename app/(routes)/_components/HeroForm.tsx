@@ -5,11 +5,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -61,7 +59,7 @@ const HeroForm = () => {
   };
 
   return (
-    <div className="absolute -bottom-28 flex w-full justify-center lg:bottom-[-190px] md:bottom-[-40px]">
+    <div className="absolute -bottom-28 flex w-full justify-center md:bottom-[-40px] lg:bottom-[-190px]">
       <div className="container mx-auto flex justify-center">
         <div className="w-full max-w-5xl rounded-md bg-gray-800 bg-opacity-75 p-6 shadow-lg">
           <Form {...form}>

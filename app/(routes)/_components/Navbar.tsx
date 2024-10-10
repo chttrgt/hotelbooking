@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed z-20 w-full items-center ${pathname !== "/" ? "bg-mydark2" : isScroolled ? "bg-mydark3" : "bg-transparent"}`}
+      className={`fixed z-30 w-full items-center ${pathname !== "/" ? "bg-mydark2" : isScroolled ? "bg-mydark3" : "bg-transparent"}`}
     >
       <div className="container">
         <div className="flex flex-row items-center justify-center px-4 py-6">

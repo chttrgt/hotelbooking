@@ -41,8 +41,8 @@ const Hero = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-5" />
-        <CarouselNext className="right-5" />
+        <CarouselPrevious className="left-5 hidden md:flex" />
+        <CarouselNext className="right-5 hidden md:flex" />
       </Carousel>
       <HeroForm />
     </div>
