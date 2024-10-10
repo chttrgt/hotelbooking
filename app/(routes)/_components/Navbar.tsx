@@ -1,7 +1,7 @@
 "use client";
+import React, { useEffect, useState } from "react";
 import { ModeToggle } from "@/components/ModeToggle";
 import Image from "next/image";
-import React from "react";
 import UserToogle from "./UserToogle";
 import MobileMenu from "./MobileMenu";
 import { NavMenu } from "@/constants";
@@ -10,9 +10,27 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [isScroolled, setIsScroolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScroolled(true);
+      } else {
+        setIsScroolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div
-      className={`z-20 w-full items-center ${pathname !== "/" ? "bg-mydark2" : "fixed"}`}
+      className={`fixed z-20 w-full items-center ${pathname !== "/" ? "bg-mydark2" : isScroolled ? "bg-mydark3" : "bg-transparent"}`}
     >
       <div className="container">
         <div className="flex flex-row items-center justify-center px-4 py-6">
