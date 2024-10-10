@@ -1,6 +1,7 @@
 import ImagesWaves from "@/components/ImagesWaves";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { AtSign, MapPin, Smartphone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -95,7 +96,23 @@ const Footer = () => {
             </div>
 
             {/* Third Area (CONTACT) */}
-            <div></div>
+            <div>
+              <h3 className="mb-4 text-xl font-bold">Contact</h3>
+              <p className="flex flex-col gap-4 text-gray-400">
+                <span className="flex items-center gap-2">
+                  <MapPin size={19} />
+                  Turkey Istanbul
+                </span>
+                <span className="flex items-center gap-2">
+                  <Smartphone size={19} />
+                  +90 555 333 22 22
+                </span>
+                <span className="flex items-center gap-2">
+                  <AtSign size={19} />
+                  hotelxyz@youtube.com
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
